@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shengsiyuan.springboot_mybatis1202.mapper.EmpDeptMapper">
+
+    <!--查询没给员工的员工信息与对应的部门信息-->
+    <resultMap id="selectEmp"
+               type="com.shengsiyuan.springboot_mybatis1202.bean.Emp" autoMapping="true">
+        <result column="id" property="id"></result>
+        <association property="dept" javaType="com.shengsiyuan.springboot_mybatis1202.bean.Dept" autoMapping="true">
+            <id column="d_id" property="id"></id>
+            <!--<result column="id1" property="id"></result>-->
+        </association>
+    </resultMap>
+
+    <!--查询每个部门对应的员工信息-->
+    <resultMap id="selectDept"
+    type="com.shengsiyuan.springboot_mybatis1202.bean.Dept" autoMapping="true">
+        <id column="id" property="id"></id>
+        <collection property="listEmp" ofType="com.shengsiyuan.springboot_mybatis1202.bean.Emp" autoMapping="true">
+            <id column="e_id" property="id"></id>
+            <!--<result column="id1" property="id"></result>-->
+        </collection>
+    </resultMap>
+
+    <!--查询没给员工的员工信息与对应的部门信息-->
+    <select id="selectEmpDept" resultMap="selectEmp">
+  SELECT e.*,d.id as d_id,d.*
+        from emp e
+        INNER JOIN dep d
+        ON e.deptid =d.id
+  </select>
+
+
+
+
+    <!--查询每个部门的员工信息-->
+    <select id="selectDeptEmp" resultMap="selectDept">
+        SELECT d.*,e.id as e_id,e.*
+        from dep d
+        INNER JOIN  emp e
+        ON d.id = e.deptid
+  </select>
+
+
+</mapper>

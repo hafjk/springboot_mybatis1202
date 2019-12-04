@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shengsiyuan.springboot_mybatis1202.mapper.EmpMapper">
+
+    <resultMap id="selectEmpResultMap" type="com.shengsiyuan.springboot_mybatis1202.bean.Emp" autoMapping="true">
+       <id column="id_" property="id" ></id>
+    </resultMap>
+
+   <select id="selectEmpById" parameterType="Integer" resultMap="selectEmpResultMap">
+           <!--resultType="com.shengsiyuan.springboot_mybatis1202.bean.Emp">-->
+
+       select id id_,'name' from emp where id=#{id}
+   </select>
+
+    <select id="selectAllEmp"
+            resultType="com.shengsiyuan.springboot_mybatis1202.bean.Emp">
+       select * from emp
+   </select>
+
+    <select id="selectEmpByName" parameterType="String"
+            resultType="com.shengsiyuan.springboot_mybatis1202.bean.Emp">
+       select * from emp where name=#{name}
+   </select>
+
+    <select id="selectEmpByEmp" parameterType="com.shengsiyuan.springboot_mybatis1202.bean.Emp"
+            resultType="com.shengsiyuan.springboot_mybatis1202.bean.Emp">
+       select * from emp
+       <where>
+           <!--<if test="emp!=null">-->
+               <if test="id!='' and id!=null" >
+                    id=#{id}
+               </if>
+               <if test="name!=null and name!=''">
+                   and name=#{name }
+               </if>
+           <!--</if>-->
+       </where>
+   </select>
+
+    <select id="selectEmpByIds" parameterType="HashMap" resultType="com.shengsiyuan.springboot_mybatis1202.bean.Emp">
+          select * from emp where id in
+          <foreach collection="list" item="list_id" open="(" close=")" separator=",">
+              #{list_id}
+          </foreach>
+    </select>
+
+</mapper>

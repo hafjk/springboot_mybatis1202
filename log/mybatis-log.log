@@ -1,0 +1,78 @@
+2019-12-04 20:31:42.895  INFO 6412 --- [main] .s.SpringbootMybatis1202ApplicationTests : Starting SpringbootMybatis1202ApplicationTests on PMWNL5IO6NWQX5C with PID 6412 (started by Administrator in D:\IntelliJ IDEA\progress\springboot_mybatis1202)
+2019-12-04 20:31:43.002 DEBUG 6412 --- [main] .s.SpringbootMybatis1202ApplicationTests : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-04 20:31:43.003  INFO 6412 --- [main] .s.SpringbootMybatis1202ApplicationTests : No active profile set, falling back to default profiles: default
+2019-12-04 20:32:22.719  INFO 6412 --- [main] .s.SpringbootMybatis1202ApplicationTests : Started SpringbootMybatis1202ApplicationTests in 44.213 seconds (JVM running for 53.294)
+2019-12-04 20:32:25.429  WARN 6412 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-04 20:32:36.708 DEBUG 6412 --- [main] c.s.s.mapper.DeptMapper.selectDeptById   : ==>  Preparing: select * from dep where id=? 
+2019-12-04 20:32:36.786 DEBUG 6412 --- [main] c.s.s.mapper.DeptMapper.selectDeptById   : ==> Parameters: 3(Integer)
+2019-12-04 20:32:41.172 DEBUG 6412 --- [main] c.s.s.mapper.DeptMapper.selectDeptById   : <==      Total: 1
+2019-12-04 20:33:08.077  INFO 4444 --- [main] c.s.s.SpringbootMybatis1202Application   : Starting SpringbootMybatis1202Application on PMWNL5IO6NWQX5C with PID 4444 (started by Administrator in D:\IntelliJ IDEA\progress\springboot_mybatis1202)
+2019-12-04 20:33:08.082 DEBUG 4444 --- [main] c.s.s.SpringbootMybatis1202Application   : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-04 20:33:08.085  INFO 4444 --- [main] c.s.s.SpringbootMybatis1202Application   : No active profile set, falling back to default profiles: default
+2019-12-04 20:33:31.220  INFO 4444 --- [main] c.s.s.SpringbootMybatis1202Application   : Started SpringbootMybatis1202Application in 24.213 seconds (JVM running for 29.798)
+2019-12-04 20:34:10.325  INFO 8464 --- [main] c.s.s.SpringbootMybatis1202Application   : Starting SpringbootMybatis1202Application on PMWNL5IO6NWQX5C with PID 8464 (started by Administrator in D:\IntelliJ IDEA\progress\springboot_mybatis1202)
+2019-12-04 20:34:10.330 DEBUG 8464 --- [main] c.s.s.SpringbootMybatis1202Application   : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-04 20:34:10.333  INFO 8464 --- [main] c.s.s.SpringbootMybatis1202Application   : No active profile set, falling back to default profiles: default
+2019-12-04 20:34:14.561  INFO 8464 --- [main] c.s.s.SpringbootMybatis1202Application   : Started SpringbootMybatis1202Application in 5.247 seconds (JVM running for 6.537)
+2019-12-04 20:36:01.554  INFO 8792 --- [main] c.s.s.SpringbootMybatis1202Application   : Starting SpringbootMybatis1202Application on PMWNL5IO6NWQX5C with PID 8792 (started by Administrator in D:\IntelliJ IDEA\progress\springboot_mybatis1202)
+2019-12-04 20:36:01.560 DEBUG 8792 --- [main] c.s.s.SpringbootMybatis1202Application   : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-04 20:36:01.561  INFO 8792 --- [main] c.s.s.SpringbootMybatis1202Application   : No active profile set, falling back to default profiles: default
+2019-12-04 20:36:05.346  INFO 8792 --- [main] c.s.s.SpringbootMybatis1202Application   : Started SpringbootMybatis1202Application in 4.696 seconds (JVM running for 5.931)
+2019-12-04 20:36:31.572  INFO 8468 --- [main] c.s.s.SpringbootMybatis1202Application   : Starting SpringbootMybatis1202Application on PMWNL5IO6NWQX5C with PID 8468 (started by Administrator in D:\IntelliJ IDEA\progress\springboot_mybatis1202)
+2019-12-04 20:36:31.578 DEBUG 8468 --- [main] c.s.s.SpringbootMybatis1202Application   : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-04 20:36:31.579  INFO 8468 --- [main] c.s.s.SpringbootMybatis1202Application   : No active profile set, falling back to default profiles: default
+2019-12-04 20:36:54.066 ERROR 8468 --- [AMQP Connection 0:0:0:0:0:0:0:1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured
+
+java.net.SocketException: Socket Closed
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_191]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_191]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_191]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_191]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[na:1.8.0_191]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265) ~[na:1.8.0_191]
+	at java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288) ~[na:1.8.0_191]
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91) ~[amqp-client-5.7.3.jar:5.7.3]
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:184) ~[amqp-client-5.7.3.jar:5.7.3]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:598) ~[amqp-client-5.7.3.jar:5.7.3]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+
+2019-12-04 20:36:54.066 ERROR 8468 --- [AMQP Connection 127.0.0.1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured
+
+java.net.SocketException: Socket Closed
+	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_191]
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_191]
+	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_191]
+	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_191]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[na:1.8.0_191]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265) ~[na:1.8.0_191]
+	at java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288) ~[na:1.8.0_191]
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91) ~[amqp-client-5.7.3.jar:5.7.3]
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:184) ~[amqp-client-5.7.3.jar:5.7.3]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:598) ~[amqp-client-5.7.3.jar:5.7.3]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+
+2019-12-04 20:36:56.079  INFO 8468 --- [main] c.s.s.SpringbootMybatis1202Application   : Started SpringbootMybatis1202Application in 25.476 seconds (JVM running for 26.732)
+2019-12-04 20:44:24.319  INFO 4752 --- [main] c.s.s.SpringbootMybatis1202Application   : Starting SpringbootMybatis1202Application on PMWNL5IO6NWQX5C with PID 4752 (started by Administrator in D:\IntelliJ IDEA\progress\springboot_mybatis1202)
+2019-12-04 20:44:24.325 DEBUG 4752 --- [main] c.s.s.SpringbootMybatis1202Application   : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-04 20:44:24.326  INFO 4752 --- [main] c.s.s.SpringbootMybatis1202Application   : No active profile set, falling back to default profiles: default
+2019-12-04 20:44:29.408  INFO 4752 --- [main] c.s.s.SpringbootMybatis1202Application   : Started SpringbootMybatis1202Application in 6.403 seconds (JVM running for 7.689)
+2019-12-04 20:44:49.129  INFO 8428 --- [main] c.s.s.SpringbootMybatis1202Application   : Starting SpringbootMybatis1202Application on PMWNL5IO6NWQX5C with PID 8428 (started by Administrator in D:\IntelliJ IDEA\progress\springboot_mybatis1202)
+2019-12-04 20:44:49.134 DEBUG 8428 --- [main] c.s.s.SpringbootMybatis1202Application   : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-04 20:44:49.135  INFO 8428 --- [main] c.s.s.SpringbootMybatis1202Application   : No active profile set, falling back to default profiles: default
+2019-12-04 20:44:55.353  INFO 8428 --- [main] c.s.s.SpringbootMybatis1202Application   : Started SpringbootMybatis1202Application in 7.134 seconds (JVM running for 8.42)
+2019-12-04 20:45:32.437  INFO 6916 --- [main] c.s.s.SpringbootMybatis1202Application   : Starting SpringbootMybatis1202Application on PMWNL5IO6NWQX5C with PID 6916 (started by Administrator in D:\IntelliJ IDEA\progress\springboot_mybatis1202)
+2019-12-04 20:45:32.443 DEBUG 6916 --- [main] c.s.s.SpringbootMybatis1202Application   : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-04 20:45:32.444  INFO 6916 --- [main] c.s.s.SpringbootMybatis1202Application   : No active profile set, falling back to default profiles: default
+2019-12-04 20:45:38.359  INFO 6916 --- [main] c.s.s.SpringbootMybatis1202Application   : Started SpringbootMybatis1202Application in 7.703 seconds (JVM running for 9.51)
+2019-12-04 20:47:58.813  INFO 6784 --- [main] c.s.s.SpringbootMybatis1202Application   : Starting SpringbootMybatis1202Application on PMWNL5IO6NWQX5C with PID 6784 (started by Administrator in D:\IntelliJ IDEA\progress\springboot_mybatis1202)
+2019-12-04 20:47:58.819 DEBUG 6784 --- [main] c.s.s.SpringbootMybatis1202Application   : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-04 20:47:58.821  INFO 6784 --- [main] c.s.s.SpringbootMybatis1202Application   : No active profile set, falling back to default profiles: default
+2019-12-04 20:48:04.234  INFO 6784 --- [main] c.s.s.SpringbootMybatis1202Application   : Started SpringbootMybatis1202Application in 7.518 seconds (JVM running for 9.302)
+2019-12-04 21:10:15.205  INFO 2308 --- [main] .s.SpringbootMybatis1202ApplicationTests : Starting SpringbootMybatis1202ApplicationTests on PMWNL5IO6NWQX5C with PID 2308 (started by Administrator in D:\IntelliJ IDEA\progress\springboot_mybatis1202)
+2019-12-04 21:10:15.208 DEBUG 2308 --- [main] .s.SpringbootMybatis1202ApplicationTests : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-04 21:10:15.209  INFO 2308 --- [main] .s.SpringbootMybatis1202ApplicationTests : No active profile set, falling back to default profiles: default
+2019-12-04 21:10:35.283  INFO 2308 --- [main] .s.SpringbootMybatis1202ApplicationTests : Started SpringbootMybatis1202ApplicationTests in 22.096 seconds (JVM running for 24.995)
+2019-12-04 21:50:26.091  INFO 6900 --- [main] .s.SpringbootMybatis1202ApplicationTests : Starting SpringbootMybatis1202ApplicationTests on PMWNL5IO6NWQX5C with PID 6900 (started by Administrator in D:\IntelliJ IDEA\progress\springboot_mybatis1202)
+2019-12-04 21:50:26.094 DEBUG 6900 --- [main] .s.SpringbootMybatis1202ApplicationTests : Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+2019-12-04 21:50:26.095  INFO 6900 --- [main] .s.SpringbootMybatis1202ApplicationTests : No active profile set, falling back to default profiles: default
+2019-12-04 21:50:36.493  INFO 6900 --- [main] .s.SpringbootMybatis1202ApplicationTests : Started SpringbootMybatis1202ApplicationTests in 11.719 seconds (JVM running for 14.881)

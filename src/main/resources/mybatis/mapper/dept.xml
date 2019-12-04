@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shengsiyuan.springboot_mybatis1202.mapper.DeptMapper">
+    <select id="selectDeptById" parameterType="Integer"
+            resultType="com.shengsiyuan.springboot_mybatis1202.bean.Dept">
+       select * from dep where id=#{id}
+   </select>
+
+    <select id="SelectAllDept"
+            resultType="com.shengsiyuan.springboot_mybatis1202.bean.Dept">
+       select * from dep
+   </select>
+
+    <update id="updateDept" parameterType="com.shengsiyuan.springboot_mybatis1202.bean.Dept">
+        update  dep set deptname=#{deptname}, locadd=#{locadd},num=#{num} where id=#{id}
+    </update>
+
+    <insert id="insertDept" parameterType="com.shengsiyuan.springboot_mybatis1202.bean.Dept">
+        insert into dep(deptname,locadd,num) values (#{deptname},#{locadd},#{num})
+    </insert>
+
+    <delete id="deleteDept" parameterType="int">
+        delete from dep where id=#{id}
+    </delete>
+
+</mapper>
